@@ -1,14 +1,32 @@
 <template>
   <div class="home">
-    home
+    <div v-if="projects.length">
+      <div v-for="project in projects" :key="project.id">
+        <singleProject :project="project" />
+      </div>
+    </div>
+    <div v-else>
+      <p>loading chek list...</p>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import singleProject from '../components/singleProject.vue'
 
 export default {
   name: 'Home',
-  components: { }
+  components: { singleProject },
+    data() {
+      return {
+        projects: []
+      }
+    },
+  mounted() {
+    fetch('http://localhost:3000/projects')
+    .then(res => res.json())
+    .then(data => this.projects = data)
+    .catch(err => alert(err.message))
+  }
 }
 </script>
