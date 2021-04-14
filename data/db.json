@@ -2,15 +2,21 @@
   "projects": [
     {
       "id": 1,
-      "title": "Create new hompage banner",
-      "details": "Lorem ipsum",
-      "complete": false
+      "title": "Create new hompage banner ",
+      "details": "this is a test update test done",
+      "complete": true
     },
     {
       "id": 2,
       "title": "Create marketing email",
-      "details": "Lorem ipsum",
+      "details": "Lorem ipsum test update for number 2",
       "complete": false
+    },
+    {
+      "title": "test 3",
+      "details": "test test test test",
+      "complete": false,
+      "id": 3
     }
   ]
 }
