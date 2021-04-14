@@ -1,16 +1,16 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "title": "Create new hompage banner",
-            "details": "Lorem ipsum",
-            "complete": false
-        },
-        {
-            "id": 2,
-            "title": "Create marketing email",
-            "details": "Lorem ipsum",
-            "complete": false
-        }
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create new hompage banner",
+      "details": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Create marketing email",
+      "details": "Lorem ipsum",
+      "complete": false
+    }
+  ]
 }
